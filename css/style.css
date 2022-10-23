@@ -5,13 +5,23 @@
 :root{
     --font-geral: 'Noto Sans', sans-serif;
     --font-title: 'Poppins', sans-serif;
-    --cor0: #753b00;
-    --cor1: #F5E4AA;
-    --cor2: #F0915D;
-    --cor3: #9E4223;
+    --cor0: #2f1912;
+    --cor1: #f4e5b8;
+    --cor2: #bd7938;
+    --cor3: #662912;
     --cor4: #C2651A;
-
+    --clr-lighttest-brown: #ac7f64;
+    --ff-primary: "Nunito", Helvetica, Arial, sans-serif;
+    --ff-logo: "Brixton", sans-serif;
+    --clr-cream: #f4e5b8;
+    --clr-white: #f5f5f5;
+        
 }
+
+@font-face {
+    font-family: "Brixton";
+    src: url("attentica-ultralight.ttf") format('opentype');
+} 
 
 *{
     margin: 0;
@@ -21,6 +31,10 @@
 
 }
 
+body{
+    background-color: #ac806444;
+}
+/******************** MENU BURGUER *****************/
 .burguer{
     display: flex;
     flex-direction: column;
@@ -31,7 +45,7 @@
     position: fixed;
     right: 2rem;
     top: 2rem;
-    z-index: 2;
+    z-index: 100;
     cursor: pointer;
 }
 
@@ -47,6 +61,7 @@
     justify-content: center;
     font-family: var(--font-title);
     opacity: 0;
+    
 }
 
 .show-menu .burguer:hover span{
@@ -90,17 +105,97 @@
     box-shadow: 1px 1px 1px  rgba(0, 0, 0, 0.562);
     transition: .7s ease-in-out;
 }
-.logo-lateral {
+
+.show-menu .burguer{
+    right: 15rem;
+    transition: 1s all;
+
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    right: 50%;
+    transform: translate(50% , 50%);
+}
+
+.menu-item{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.menu-link {
+    font-family: var(--font-geral);
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.menu-link:hover{
+    color: var(--cor0);
+    transition: 0.7s ease-in-out;
+}
+
+.menu #cadastro{
+    background-color: var(--clr-lighttest-brown);
+    padding: 7px 12px;
+    border-radius: 10px;
+    color: var(--cor0);
+    
+}
+
+.menu #login{
+    background-color: var(--clr-lighttest-brown);
+    padding: 7px 12px;
+    border-radius: 10px;
+    color: var(--cor0);
+}
+.cadastro-button{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    bottom: 17%;
+    align-items: center;
+}
+.login a{
+    font-family: var(--ff-logo);
+    color: var(--clr-white);
+    padding: 5px 16px;
+    background-color: var(--cor3);
+    border: none;
+    border-radius: 14px;
+    box-shadow: 1px 1px 2px 1px #66281294;
+}
+
+.login:nth-child(2) a {
+    padding: 5px 37px;
+    margin-left: 25px;
+}
+
+.cadastro-button a:hover{
+    background-color: var(--clr-cream);
+    cursor: pointer;
+    color: var(--cor0);
+    transition: step-start .5s ease-in;
+}
+/***************** FIM MENU BURGUER ************************/
+
+/******************** LOGO LATERAL ***************************/
+.logo-lateral {
+    position: fixed;
     z-index: 1;
-    top: 0.7rem;
+    top: 0.2rem;
+    left: 0.3rem;
 }
 
 .logo-lateral img{
-    width: 80px;
+    width: 100px;
     opacity: 2;
 }
 
+/************************** HEADER *****************************/
 header{
     width: 100%;
     height: 100vh;
@@ -150,7 +245,7 @@ header{
 }
 
 .banner h1{
-    font-family: var(--font-title);
+    font-family: var(--ff-logo);
     color: #fff;
     font-size: 4.5rem;
     font-weight: 300;
@@ -179,7 +274,7 @@ header{
     background: linear-gradient(to right, var(--cor0), var(--cor3));
     border: none;
     font-size: 1rem;
-    font-family: var(--font-geral);
+    font-family: var(--font-title);
     font-weight: 200;
     padding: 8px 15px;
     border-radius: 20px;
@@ -189,58 +284,11 @@ header{
 
 }
 
+
 .banner button a {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
-}
-
-
-.sidebar{
-    width: 20rem;
-    height: 100vh;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    right: -20rem;
-    transition: all 0.7s;
-}
-
-.show-menu .sidebar{
-    right: 0;
-}
-
-.show-menu .burguer{
-    right: 15rem;
-    transition: 1s all;
-
-}
-.menu {
-    position: absolute;
-    right: 50%;
-    transform: translate(50% , 50%);
-}
-
-.menu-item{
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.menu-link {
-    font-family: var(--font-geral);
-    font-size: 1.2rem;
-    color: #000;
-}
-
-.menu-link:hover{
-    color: var(--cor0);
-    transition: 0.7s ease-in-out;
-}
-.cadastro-btn{
-    position: absolute;
-    z-index: 1;
-    right: 10%;
-    top: 10px;
 }
 
 .banner button:hover{
@@ -250,6 +298,25 @@ header{
     transition: transform 0.7s ease-in-out;
 
 }
+/*********************** FIM HEADER ***************************/
+
+/************************ SIDEBAR *************************/
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all 0.7s;
+    z-index: 99;
+
+}
+
+.show-menu .sidebar{
+    right: 0;
+}
+
 
 .social-media{
     display: flex;
@@ -279,3 +346,233 @@ header{
     background-color: var(--cor0);
     transition: 0.6s ease-in-out;
 }
+
+/********************* FIM SIDEBAR *************************/
+
+/*********************** SECTION SOBRE **********************/
+.sobre {
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 700px){
+
+    .container-sobre{
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .info-sobre{
+        width: 100vw;
+        padding: 0;
+    }
+
+    .img-sobre{
+        padding: 0;
+        width: 100%;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+}
+.container-sobre {
+    display: flex;
+    width: 90%;
+    height: 60vh;
+    max-width: 100%;
+    justify-content: center;
+    background-color: #ac80647e;
+    align-items: center;
+    margin: auto;
+    padding: 30px;
+    
+}
+
+.info-sobre {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 6% 0px 5%;
+    width: 50rem;
+}
+
+.info-sobre p{
+    font-family: var(--font-geral);
+    font-weight: 400;
+    line-height: 26px;
+    color: black;
+}
+
+.info-sobre h2{
+    font-family: var(--font-title);
+    color: var(--cor0);
+    font-weight: 500;
+}
+
+.img-sobre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50rem;
+    box-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.274);
+    background-color: var(--cor3);
+    border-radius: .2rem;
+
+}
+
+.img-sobre img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: .2rem;
+    opacity: .8;
+}
+
+/******************* FIM SECTION SOBRE ************************/
+
+/*********************** PRODUTOS *****************************/
+
+.produtos {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+    
+
+}
+
+.produtos h1{
+    font-family: var(--font-title);
+    margin-top: 2.2rem;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    color: var(--cor0);
+    text-transform: uppercase;
+}
+
+.produtos-c {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+
+
+.produto {
+    width: 20%;
+    height: 70%;
+    margin: auto;
+    position: relative;
+    background-color:var(--clr-lighttest-brown);
+    border-radius: .3rem;
+    box-shadow: .2rem .2rem .4rem  1px rgba(0, 0, 0, 0.384);
+    transition: all .3s;
+}
+
+.produto:hover {
+    background-color: var(--cor0);
+    cursor: pointer;
+}
+.produto:hover .text-produto{
+    opacity: 1;
+    visibility: visible;
+    bottom: 2rem;
+    cursor: pointer;
+}
+
+.produto:hover .title-produto{
+    color: var(--cor1);
+}
+
+.produto-content{
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    padding: .8rem;
+    text-shadow: .3rem .1rem 0.5rem black;
+    object-fit: cover;
+    
+}
+
+.title-produto {
+    font-family: var(--font-title);
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+.text-produto{
+    opacity: 0;
+    visibility: 0;
+    font-family: var(--font-geral);
+    font-weight: 400;
+    font-size: .8rem;
+    word-wrap:normal; 
+    line-height: 1.16rem;
+    width: 90%;
+    color: white;
+    margin-bottom: 2.5rem;
+}
+
+.produto-content button{
+    background: #8E2DE2;  
+    background: -webkit-linear-gradient(to right, var(--cor0), var(--cor3));  
+    background: linear-gradient(to right, var(--cor0), var(--cor3));
+    border: none;
+    font-size: 1rem;
+    font-family: var(--font-geral);
+    font-weight: 200;
+    padding: 8px 15px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.produto-content button:hover{
+    cursor: pointer;
+    background: #8E2DE2;  
+    background: -webkit-linear-gradient(to left, var(--cor0), var(--cor3));  
+    background: linear-gradient(to left, var(--cor0), var(--cor3));
+    transition: transform .5s ease-in-out;
+}
+.produto-img{
+    width: 100%;
+    height: 100%;
+   border-radius: .3rem;
+
+
+}
+
+.produto-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .3rem;
+    opacity: .8;
+    
+}
+
+.produto:nth-child(3){
+    background-color: var(--cor3);
+}
+
+.produto:nth-child(3):hover{
+    background-color: var(--cor0);
+}
+/************************ FIM PRODUTOS ************************/
