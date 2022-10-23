@@ -5,14 +5,102 @@
 :root{
     --font-geral: 'Noto Sans', sans-serif;
     --font-title: 'Poppins', sans-serif;
+    --cor0: #753b00;
+    --cor1: #F5E4AA;
+    --cor2: #F0915D;
+    --cor3: #9E4223;
+    --cor4: #C2651A;
 
 }
 
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 
 }
+
+.burguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: none;
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.burguer span{
+    position: absolute;
+    left: 3rem;
+    height: 2rem;
+    background-color: var(--cor0);
+    width: 6rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-title);
+    opacity: 0;
+}
+
+.show-menu .burguer:hover span{
+    opacity: 1;
+    transition: .8s ease-out;
+}
+.burguer span:before{
+    position: absolute;
+    content: "";
+    border-right: .5rem solid var(--cor0);
+    border-left: .5rem solid transparent;
+    border-top: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    left: -1rem;
+}
+
+.line {
+    width: 100%;
+    height: 3%;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px .8px black;
+    
+}
+
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ease-in-out;
+}
+
+.show-menu #line1 {
+    background-color: black;
+    transform: rotate(45deg) translateY(.9rem) ;
+    box-shadow: 1px 1px 1px  black;
+    transition: .7s ease-in-out;
+}
+
+.show-menu #line3{
+    background-color: black;
+    transform: rotate(135deg) translateY(1rem);
+    box-shadow: 1px 1px 1px  rgba(0, 0, 0, 0.562);
+    transition: .7s ease-in-out;
+}
+.logo-lateral {
+    position: absolute;
+    z-index: 1;
+    top: 0.7rem;
+}
+
+.logo-lateral img{
+    width: 80px;
+    opacity: 2;
+}
+
 header{
     width: 100%;
     height: 100vh;
@@ -67,7 +155,7 @@ header{
     font-size: 4.5rem;
     font-weight: 300;
     opacity: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.658) ;
+    text-shadow: 2px 2px 3px  rgba(0, 0, 0, 0.747) ;
     line-height: 3rem;
     margin-bottom: 1rem;
     animation: texto 2s 0.9s forwards;
@@ -75,19 +163,20 @@ header{
 
 
 .banner p {
-    font-family: var(--font-geral);
+    font-family: var(--font-title);
     font-size: 2rem;
+    color: var(--cor1);
     font-weight: 400;
     margin-bottom: 2rem;
     opacity: 0;
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.349) ;
+    text-shadow: 2px 2px 3px 1px var(--cor0) ;
     animation: texto 2s 0.9s forwards;
 }
 
 .banner button{
     background: #8E2DE2;  
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  
-    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: -webkit-linear-gradient(to right, var(--cor0), var(--cor3));  
+    background: linear-gradient(to right, var(--cor0), var(--cor3));
     border: none;
     font-size: 1rem;
     font-family: var(--font-geral);
@@ -107,37 +196,86 @@ header{
 }
 
 
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all 0.7s;
+}
 
-.logo-lateral {
+.show-menu .sidebar{
+    right: 0;
+}
+
+.show-menu .burguer{
+    right: 15rem;
+    transition: 1s all;
+
+}
+.menu {
     position: absolute;
-    z-index: 1;
+    right: 50%;
+    transform: translate(50% , 50%);
 }
 
-.logo-lateral img{
-    width: 80px;
-    opacity: 2;
+.menu-item{
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.icon :nth-child(1){
-    position: absolute;
-    right: 10%;
-    top: 10px;
-    cursor: pointer;
-    z-index: 1;
+.menu-link {
+    font-family: var(--font-geral);
+    font-size: 1.2rem;
+    color: #000;
 }
 
+.menu-link:hover{
+    color: var(--cor0);
+    transition: 0.7s ease-in-out;
+}
 .cadastro-btn{
     position: absolute;
     z-index: 1;
-    right: 2%;
+    right: 10%;
     top: 10px;
 }
 
 .banner button:hover{
-    background: #8E2DE2;  
-    background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  
-    background: linear-gradient(to left, #4A00E0, #8E2DE2);
-    transition: transform 0.7s ease ease-in-out;
+    background: var(--cor3);  
+    background: -webkit-linear-gradient(to right, var(--cor3), var(--cor0));  
+    background: linear-gradient(to right, var(--cor3), var(--cor0));
+    transition: transform 0.7s ease-in-out;
 
 }
 
+.social-media{
+    display: flex;
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.social-media i {
+    color: var(--cor0);
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+
+}
+
+.social-media i:hover{
+    color: var(--cor1);
+    background-color: var(--cor0);
+    transition: 0.6s ease-in-out;
+}

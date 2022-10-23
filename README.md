@@ -4,9 +4,9 @@ Prática de construção de site
 ## tarefas
 Controle do projeto feito pelo GitHub 
 
-### icones
+## icones
 
-:package: nova funcionalidade 
-:up: atualização
-:beatle: correção de bug
-:checkered_flag: release
+- :package: nova funcionalidade 
+- :up: atualização
+- :beatle: correção de bug
+- :checkered_flag: release
