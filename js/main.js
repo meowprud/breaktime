@@ -1,5 +1,18 @@
-var burguer = document.querySelector(".burguer");
+const imgs = document.getElementsById("picture");
+const img = document.querySelectorAll("#img .pic"); 
 
-burguer.addEventListener('click', function(){
-    document.querySelector(".container").classList.toggle("show-menu");
-});
+let idx = 0;
+
+
+function carrossel(){
+    idx++;
+
+    if (idx > img.length - 1){
+        idx = 0;
+    }
+
+    imgs.style.transform = `translateX(${-idx * 100}%`;
+
+}
+
+setInterval(carrossel, 2000);
