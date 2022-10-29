@@ -20,7 +20,7 @@
             <img src="./img/undraw_hello_re_3evm.svg" alt="">
         </div>
         <div class="form">
-        <form action="">
+        <form action="config.php" method="POST">
             <div class="form-header">
                 <div class="title">
                     <h1>Cadastro</h1>
@@ -66,26 +66,26 @@
 
                     
                         <div class="gender_input">
-                            <input type="radio" id="female" name="genero">
+                            <input type="radio" id="female" name="genero" value="feminino">
                             <label for="female">Feminino</label>
                         </div>
                         <div class="gender_input">
-                            <input type="radio" id="male" name="genero">
+                            <input type="radio" id="male" name="genero" value="masculino">
                             <label for="male">Masculino</label>
                         </div>
                         <div class="gender_input">
-                            <input type="radio" id="outro" name="genero">
+                            <input type="radio" id="outro" name="genero" value="outro">
                             <label for="outro">Outros</label>
                         </div>
                         <div class="gender_input">
-                            <input type="radio" id="none" name="genero">
+                            <input type="radio" id="none" name="genero" value="deixabaxo">
                             <label for="none">Prefiro não dizer</label>
                         </div>
                                 
                         
                     </div>
                     <div class="continue-btn">
-                        <button><a href="#">Continuar</a></button>
+                        <input type="submit" name="submit" id="submit">
                 </div>
             </div>
         </form>

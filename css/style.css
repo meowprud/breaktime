@@ -390,9 +390,8 @@ header{
 }
 .container-sobre {
     display: flex;
-    width: 90%;
+    width: 85%;
     height: 60vh;
-    max-width: 100%;
     justify-content: center;
     background-color: #ac80647e;
     align-items: center;
