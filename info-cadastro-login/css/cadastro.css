@@ -174,7 +174,7 @@ body {
 
 }
 
-.continue-btn button{
+.continue-btn input {
     width: 100%;
     margin-top: 1rem;
     border: none;
@@ -186,13 +186,13 @@ body {
 
 }
 
-.continue-btn button a {
+.continue-btn input{
     text-decoration: none;
     color: #fff;
     font-size:1rem;
 }
 
-.continue-btn button:hover{
+.continue-btn input:hover{
     background-color: var(--cor0);
 }
 

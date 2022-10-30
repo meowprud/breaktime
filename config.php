@@ -8,8 +8,8 @@
    $usuario=$_POST['usuario'];
    $email=$_POST['email'];
    $celular=$_POST['celular'];
-   $senha=md5($_POST['senha']);
-   $confirmesenha=md5($_POST['confirme_senha']);
+   $senha=$_POST['senha'];
+   $confirmesenha=$_POST['confirme_senha'];
    $genero=$_POST['genero'];
 
 
@@ -23,7 +23,7 @@ header('Location: http://localhost/version1/index.html');
  }
 
  else{
-    echo('erro'. mysqli_connect_error);
+    echo('erro');
  }
 
  mysqli_close($conexao);

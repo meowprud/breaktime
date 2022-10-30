@@ -73,7 +73,7 @@ body{
     margin-top: 1rem;
 }
 
-.login-btn button {
+.login-btn input{
     background-color: var(--cor3);
     border: none;
     font-size: 1rem;
@@ -81,7 +81,7 @@ body{
     border-radius: 10px;
 }
 
-.login-btn button a {
+.login-btn input{
     text-decoration: none;
     text-align: center;
     color: #fff;
@@ -122,7 +122,7 @@ body{
     cursor:auto;
 }
 
-.login-btn button:hover{
+.login-btn input:hover{
     background-color: var(--cor0) ;
 }
 

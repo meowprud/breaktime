@@ -1,0 +1,45 @@
+:root{
+    --font-geral: 'Noto Sans', sans-serif;
+    --font-title: 'Poppins', sans-serif;
+    --cor0: #2f1912;
+    --cor1: #f4e5b8;
+    --cor2: #bd7938;
+    --cor3: #662912;
+    --cor4: #C2651A;
+    --clr-lighttest-brown: #ac7f64;
+    --ff-primary: "Nunito", Helvetica, Arial, sans-serif;
+    --ff-logo: "Brixton", sans-serif;
+    --clr-cream: #f4e5b8;
+    --clr-white: #f5f5f5;
+        
+}
+
+@font-face {
+    font-family: "Brixton";
+    src: url("attentica-ultralight.ttf") format('opentype');
+} 
+
+@media screen and (max-width: 700px){
+
+    .container-sobre{
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .info-sobre{
+        width: 100vw;
+        padding: 0;
+    }
+
+    .img-sobre{
+        padding: 0;
+        width: 100%;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+}
