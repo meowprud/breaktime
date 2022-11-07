@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/body-produtos.css">
     <link rel="stylesheet" href="css/mediaquery.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/parcerias.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/logos/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/logos/logo_sem_fundo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/logos/favicon-16x16.png">
@@ -16,13 +17,14 @@
     <title>Break Time</title>
 </head>
 <body>
-    <div class="container show-menu">
+    <div class="container">
         <header>
             <div class="burguer">
                 <div class="line" id="line1"></div>
                 <div class="line" id="line2"></div>
                 <div class="line" id="line3"></div>
                 <span>fechar</span>
+               
             </div>
         <div class="logo-lateral">
             <a href="#"><img src="img/logos/logo_branca.png" alt=""></a>
@@ -31,25 +33,23 @@
         <div class = "carrossel">
             <div class = "container-carrossel" id="picture">
                 <img class="pic" src="img/coffe-cup.jpg" alt="paisagem">
-                <img class="pic" src="img/banner.jpg" alt="paisagem">
-                <img class="pic" src="img/atendimento-img.jpg" alt="paisagem">
-                <img class="pic" src="img/img1.jpg" alt="paisagem">
                 
             </div>
         </div>
 
-        <img src="/info-cadastro-login/img/undraw_hello_re_3evm.svg" alt="">
 
         <div class="banner">
             <h1>Break Time</h1>
             <p>Cyber cafeteria</p>
-            <button><a href="#sobre">Saiba mais</a></button>
+
         </div>
         </header>
 
-        <aside class="sidebar">
+        <aside class="sidebar show-menu">
+            <div class="user"><a href=""><i class="fa-solid fa-user"></i></a></div>
             <nav>
                 <ul class="menu">
+
                 <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
                 <li class="menu-item"><a href="#sobre" class="menu-link">Sobre Nós</a></li>
                 <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
@@ -71,10 +71,16 @@
             </div>
         </aside>
 
+        <section class="mais">
+            <div class="div-mais">
+                <p>Conheça a Break Time! A mais nova Cyber Cafeteria da sua Região</p>
+                <a href="">Saiba mais</a> 
+            </div>
+        </section>
         <section class="sobre" id="sobre">
             <div class="container-sobre">
                 <div class="info-sobre">
-                    <h2>section sobre</h2>
+                    <h2></h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi facilis ex quas ullam officia optio dolores quaerat expedita tempore, corporis consequatur doloremque aspernatur ipsa, aliquid sed unde, natus non nostrum.</p>
                 </div>
                 <div class="img-sobre">
@@ -84,35 +90,35 @@
         </section>
 
         <section class="produtos" id="produtos">
-            <h1>produtos</h1 alt="Produtos">
+            <h1 id="prod">Produtos</h1 alt="Produtos">
             <div class="produtos-c">
-                <div class="produto" id="produto1">
+                <div class="produto" id="produto1" onclick="redireciona()">
                     <div class="produto-img" id="img1">
                         <img src="img/cards/img1.webp" alt="">
                     </div>
                     <div class="produto-content" id="content1">
-                        <h3 class="title-produto" id="title1">Machiatto</h3>
-                        <p class="text-produto" id="text1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam, nam mollitia modi ea dicta. Ratione, veniam. Quam nisi laboriosam blanditiis accusamus aspernatur dolorum, ullam nemo, assumenda, totam possimus natus!</p>
+                        <h3 class="title-produto" id="title1">Geladas</h3>
+                        <p class="text-produto" id="text1">Veja todas as opções de bebidas geladas!</p>
                         
                     </div>
                 </div>
-                <div class="produto" id="produto2">
+                <div class="produto" id="produto2" onclick="redireciona()">
                     <div class="produto-img" id="img2">
                         <img src="img/cards/frappuccino.jpg" alt="">
                     </div>
                     <div class="produto-content" id="content2">
-                        <h3 class="title-produto" id="title2">Frappuccino</h3>
-                        <p class="text-produto" id="text2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam, nam mollitia modi ea dicta. Ratione, veniam. Quam nisi laboriosam blanditiis accusamus aspernatur dolorum, ullam nemo, assumenda, totam possimus natus!</p>
+                        <h3 class="title-produto" id="title2">Quentes</h3>
+                        <p class="text-produto" id="text2">Veja todas as opções de bebidas quentes!</p>
                         
                     </div>
                 </div>
-                <div class="produto" id="produto3">
+                <div class="produto" id="produto3" onclick="redireciona()">
                     <div class="produto-img" id="img3">
                         <img src="img/cards/vanilla-icecream.jpg" alt="">
                     </div>
                     <div class="produto-content" id="content3">
-                        <h3 class="title-produto" id="title3">Cappucino</h3>
-                        <p class="text-produto" id="text3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam, nam mollitia modi ea dicta. Ratione, veniam. Quam nisi laboriosam blanditiis accusamus aspernatur dolorum, ullam nemo, assumenda, totam possimus natus!</p>
+                        <h3 class="title-produto" id="title3">Sobremesas</h3>
+                        <p class="text-produto" id="text3">Veja nossas opções de sobremesas!</p>
                         
                     </div>
                 </div>
@@ -178,34 +184,45 @@
         </section>
 
         <section class="parcerias" id="empty">
+            <h1>Parceiros</h1>
             <div class="container-parcerias">
-                <h1>PARCEIROS BREAK TIME</h1>
+                
                 <div class="parceiro">
-                    <h2>Apolo Energy</h2>
-                    <div class="img-parceiro">
-                        <img src="" alt="">
+                    
+                    <div class="img-parceiro" id="num1">
+                        <img src="img/logos/logo-apolo.png" alt="">
                     </div>
                 </div>
                 <div class="parceiro">
-                    <h2>Lightspeed</h2>
+                    
                     <div class="img-parceiro">
-                        <img src="" alt="">
+                        <img src="img/logos/LIGHTSPEED_LOGO.png" alt="">
                     </div>
                 </div>
+                <div class="parceiro">
+                    <div class="img-parceiro">
+                        <img src="img/logos/cafe_caramelo_1-removebg-preview.png" alt="">
+                   </div>
+                    </div>
             </div>
         </section>
 
         <footer>
-            <div class="social-media-footer">
-                <ul>
-                    <li>facebook</li>
-                    <li>intagram</li>
-                    <li>linkedin</li>
-                </ul>
+            <div class="container-footer">
+                <div class="social-media-footer">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </footer>
     </div>
 </body>
 <script src="js/sidebar.js"></script>
 <script src="js/main.js"></script>
+<script src="js/produtos-main.js"></script>
 </html>
+
