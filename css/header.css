@@ -36,6 +36,49 @@ body{
     overflow-x: hidden ;
 }
 /******************** MENU BURGUER *****************/
+.logo-lateral{
+    object-fit: contain;
+    height: 100%;
+    width: 20%;
+    margin-left: 2em;
+}
+
+.logo-lateral img{
+    height: 100%;
+
+}
+
+.nav-bar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    left: 0;
+    height: 11vh;
+    width: 100%;
+    z-index: 100;
+    background-color:#2f191241;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.24);
+}
+
+.nav-bar nav{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 80%;
+
+    
+}
+
+.nav-bar a {
+    color: white;
+    font-family: var(--font-title);
+    margin-right: 2em;
+    font-size: 1em;
+}
+
 .burguer{
     display: flex;
     flex-direction: column;
@@ -48,6 +91,19 @@ body{
     top: 2rem;
     z-index: 100;
     cursor: pointer;
+}
+
+@media(max-width: 700px) {
+
+    .burguer{
+        visibility: visible;
+    }
+
+    .nav-bar{
+        visibility: hidden;
+    }
+
+    
 }
 
 .burguer span{
