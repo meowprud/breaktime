@@ -15,7 +15,7 @@
     --clr-lighttest-brown: hsl(23, 30%, 53%);
     --clr-cream: hsl(45, 73%, 84%);
     --clr-white: hsl(0, 0%, 96%);
-        
+    --clr-blue: hsl(237, 39%, 91%);
 }
 
 @font-face {
@@ -23,11 +23,24 @@
     src: url("attentica-ultralight.ttf") format('opentype');
 } 
 
+.tecnology{
+    margin-top: 7em;
+    padding-bottom: 3em;
+}
 
+
+.tecnology h1{
+    text-align: center;
+    padding-top: .6em;
+    padding-bottom:.5em;
+    font-family: var(--font-title);
+    font-size: 2.7em;
+    color: black;
+    text-shadow: .1em .1em .1em rgb(200, 203, 233);
+}
 .tecnologias{
     width: 100%;
     height: 30em;
-    margin-top: 5em;
     background-color: var(--cor0);
 }
 
@@ -38,6 +51,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
+    box-shadow: .1em .1em .3em rgb(134, 130, 130);
 }
 
 .imagem-fundo-tecnologia{
@@ -59,14 +73,18 @@
     position: absolute;
 }
 
-.info-tecnologia p{
+.info-tecnologia {
     width: 40em;
+    
+}
+
+.info-tecnologia p {
     font-family: var(--font-geral);
     text-align: center;
     color: white;
-    font-size: 1em;
-
+    font-size: 1.3em;
 }
+
 
 .btn-info-tecnologia{
     display: flex;
@@ -78,7 +96,7 @@
 }
 
 .btn-info-tecnologia a {
-    font-size: 1em;
+    font-size: 1.5em;
     color: white;
 }
 
@@ -90,28 +108,37 @@
 .tecnologias-disp{
     width: 100%;
     display: flex;
-    justify-content: center;
-}
-
-.container-disponiveis{
-    width: 1170px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    background-color: var(--clr-blue);
+    padding-bottom: 4em;
+    box-shadow: .1em .1em .2em rgb(161, 161, 161);
     
 }
 
-.disponiveis{
-    max-width: 1170px;
+.container-disponiveis{
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1170px;
+    flex-direction: column;
     justify-content: center;
+
+}
+
+.disponiveis{
+    display: flex;
+    width: 100%;
+    max-width: 1170px;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    
 }
 
 .options-disp{
     height: 5em;
-    border: 2px solid black;
+    border: 1px solid var(--cor0);
     padding: .3em;
+    background-color: whitesmoke;
 }
 
 .options-disp img{
@@ -122,53 +149,115 @@
 
 .container-pcs{
     width: 100%;
-    margin-top: 1em;
+    margin-top: 2em;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: row;
+
 }
+
+
 
 
 .option-pc{
-    height: 35em;
-    width: 25em;
+    width: 22em;
     display: flex;
     flex-direction: column;
-    padding: .5em;
-    margin: .5em;
+    padding: .7em;
+    margin: .5em .9em;
+    background-color: white;
+    border-radius: .2em;
+    box-shadow: .1em .15em .2em .1em rgb(161, 161, 161);
 }
 
-.img-options{
-    width: 25em;
-    height: 20em;
+.img-options {
+    width: 22em;
+    height: 15em;
+    border-radius: 1em;
 }
+
 
 .img-options img{
     width: 100%;
     height: 100%;
+    border-radius: 1em;
     object-fit: cover;
 }
 
 .descricao{
-    margin-top: 3em ;
-    width: 100%;
-    border: 2px solid black;
+    margin-top: 3em;
+    max-width: 1170px;
+    
 }
+
+.caixas-desc{
+    
+    background-color: var(--clr-blue);
+
+    
+}
+
 
 .descricao h2{
     width: 100%;
-    background-color: var(--cor0);
-    color: var(--clr-cream);
+    font-family: var(--font-title) ;
+    color: black;
+    text-shadow: .1em .1em .1em rgb(179, 174, 174);
+    letter-spacing: .1em;
+
 }
+
+
 .caixas-desc ul{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
     
 }
 
 .caixas-desc li{
     padding: .3em;
     margin: .3em;
-    background-color: var(--clr-lighttest-brown);
+    border-radius: .1em;
+    background-color: var(--clr-white);
+    font-family: var(--font-geral);
+    border: 1px solid var(--cor0);
+    font-weight: 600;
+    color: black;
+}
+
+.info-pcs{
+    width: 22em;
+    padding-top: .4em;
+    padding-bottom: .4em;
+}
+.info-pcs p, span{
+    font-family: var(--font-geral);
+    font-size: 1.1em;
+}
+
+.info-pcs span{
+    font-weight: bold;
+}
+
+.info-pcs sup{
+    font-weight: 400;
+}
+
+.title-pcs{
+    font-family: var(--font-title);
+    font-size: 1.4em;
+    
+}
+
+.reserva-button a {
+    text-decoration: underline;
+}
+
+.opcao-pc-title{
+    margin-top: 1em;
+    color: black;
 }

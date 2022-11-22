@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="css/parcerias.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/logos/apple-touch-icon.png">
     <link rel="stylesheet" href="css/tecnologia.css">
+    <link rel="stylesheet" href="usuario.css">
     <link rel="icon" type="image/png" sizes="32x32" href="img/logos/logo_sem_fundo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/logos/favicon-16x16.png">
     <link rel="manifest" href="img/site.webmanifest">
     <link rel="shortcut icon" href="img/logos/favicon.ico" type="image/x-icon">
+    
     <title>Break Time</title>
 </head>
 <body>
@@ -24,19 +26,24 @@
                 <div class="logo-lateral">
                     <a href="#"><img src="img/logos/logo_branca.png" alt=""></a>
                 </div>
+
                 <div class="nav-links">
                     <a href="#">Home</a>
                     <a href="#">Sobre nós</a>
                     <a href="#produtos">Produtos</a>
                     <a href="#">Tecnologia</a>
-                    <div class="button-header">
-                        <div class="cadastro-header"><a href="http://localhost/version1/cadastro.php">Cadastre-se</a></div>
-                        <div class="login-header"><a href="http://localhost/version1/login.php">Login</a></div>
+
+                     <div class="usuario">
+                            <i class="fa-solid fa-user"></i>
+                            <p>Olá, <sup>"usuario"</sup></p>
+                        </div>
+        
                     </div>
-                </div>
+
+                    
+                
                 
             </div>
-
             <div class="burguer">
                 <div class="line" id="line1"></div>
                 <div class="line" id="line2"></div>
@@ -87,12 +94,17 @@
             </div>
         </aside>
 
-        
+        <section class="mais">
+            <div class="div-mais">
+                <p>Conheça a Break Time! A mais nova Cyber Cafeteria da sua Região</p>
+                <a href="">Saiba mais</a> 
+            </div>
+        </section>
         <section class="sobre" id="sobre">
             <div class="container-sobre">
                 <div class="info-sobre">
-                    <h2>Sobre nós</h2>
-                    <p>A Break Time é a Cyber cafeteria que todos buscavam e que agora esta disponível para atender você</p>
+                    <h2></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi facilis ex quas ullam officia optio dolores quaerat expedita tempore, corporis consequatur doloremque aspernatur ipsa, aliquid sed unde, natus non nostrum.</p>
                 </div>
                 <div class="img-sobre">
                     <img src="img/atendimento-img.jpg" alt="" srcset="">
@@ -100,23 +112,16 @@
             </div>
         </section>
 
-        <section class="mais">
-            <div class="div-mais">
-                <p>Conheça a Break Time! A mais nova Cyber Cafeteria da sua Região</p>
-                <a href="">Endereço</a> 
-            </div>
-        </section>
-
         <section class="produtos" id="produtos">
-            <h1 id="prod">Cardápio</h1 alt="Produtos">
+            <h1 id="prod">Produtos</h1 alt="Produtos">
             <div class="produtos-c">
                 <div class="produto produto1" id="produto1" onclick="redireciona()">
                     <div class="produto-img" id="img1">
                         <img src="img/cards/img1.webp" alt="">
                     </div>
                     <div class="produto-content" id="content1">
-                        <h3 class="title-produto" id="title1"> Bebidas Geladas</h3>
-                        <p class="text-produto" id="text1">Clique e veja as opções de bebidas geladas em nosso cardápio!</p>
+                        <h3 class="title-produto" id="title1">Geladas</h3>
+                        <p class="text-produto" id="text1">Veja todas as opções de bebidas geladas!</p>
                         
                     </div>
                 </div>
@@ -125,8 +130,8 @@
                         <img src="img/cards/frappuccino.jpg" alt="">
                     </div>
                     <div class="produto-content" id="content2">
-                        <h3 class="title-produto" id="title2">Bebidas Quentes</h3>
-                        <p class="text-produto" id="text2">Clique e veja as opções de bebidas quentes em nosso cardápio!</p>
+                        <h3 class="title-produto" id="title2">Quentes</h3>
+                        <p class="text-produto" id="text2">Veja todas as opções de bebidas quentes!</p>
                         
                     </div>
                 </div>
@@ -136,7 +141,7 @@
                     </div>
                     <div class="produto-content" id="content3">
                         <h3 class="title-produto" id="title3">Sobremesas</h3>
-                        <p class="text-produto" id="text3">Clique e veja as opções de sobremesa em nosso cardápio!</p>
+                        <p class="text-produto" id="text3">Veja nossas opções de sobremesas!</p>
                         
                     </div>
                 </div>
@@ -146,19 +151,16 @@
         </section>
 
         <section class="tecnology">
-            <h1>Conheça nosso Cyber-space</h1>
          <div class="tecnologias">
-           
             <div class="container-tecnologia">
                                <div class="imagem-fundo-tecnologia">
                     <img src="img/tec/imagem-fundo.jpg" alt="" >
                 </div>
                 <div class="info-tecnologia">
-                    <p>Um local acolhedor com serviços tecnológicos de qualidade?<br>
-                         É possível! Garanta já o seu horário no nosso espaço Cyber. </p>
+                    <p>Um local acolhedor com serviços tecnológicos de qualidade? É possível! Reserve já o seu horário no nosso espaço Cyber. </p>
 
                     <div class="btn-info-tecnologia">
-                        <a href="reserva.html">Faça sua reserva</a>
+                        <a href="reserva.html">Reserve um horário</a>
                     </div>
                 </div>
 
@@ -168,14 +170,10 @@
         </div> 
         
         <div class="tecnologias-disp">
-
             <div class="container-disponiveis">
-                
                 <div class="descricao">
                     <h2>Serviços Cyber</h2>
-                    
                     <div class="caixas-desc">
-                    
                         <ul>
                             <li>Pacote Office</li>
                             <li>Pacote Adobe</li>
@@ -189,7 +187,6 @@
                         </ul>
                     </div>
                 </div>
-                
                     <div class="disponiveis">
                         
                         
@@ -215,17 +212,13 @@
                             <img src="img/tec/impressora.png" alt="">
                         </div>
                     </div>
-                </div>
-
-                <h1 class="opcao-pc-title">Opções de computadores</h1>
 
                     <div class="container-pcs">
-                        
                         <div class="option-pc">
                             <div class="img-options">
-                                <img src="img/tec/imagem-fundo2.jpg" alt="">
+                                <img src="img/tec/pc-gamer.avif" alt="">
                             </div>
-                            <div class="info-pcs">
+                            <div class="infos-pcs">
                                 <h2 class="title-pcs">Game Time</h2>
                                 <p>Ideal para os jogadores que buscam um computador de excelente desempenho para uma ótima partida! </p>
                                 <span>R$13,00<sup>1h</sup></span>
@@ -241,8 +234,8 @@
                             </div>
                             <div class="info-pcs">
                             <h2 class="title-pcs">Business</h2>
-                            <p>A melhor opção para ser produtivo no seu trabalho com a garantia de um computador com bom desempenho!</p>
-                            <span>R$9,00<sup>1h</sup></span>
+                                <p>A melhor opção para ser produtivo no seu trabalho com a garantia de um computador com bom desempenho!</p>
+                                <span>R$9,00<sup>1h</sup></span>
                                 <div class="reserva-button">
                                     <a href="reserva.html">Faça sua reserva</a>
                                 </div>
@@ -251,7 +244,7 @@
                     </div>
                 </div>
             
-    
+        </div>
         </section>
 
         <section class="">
@@ -365,4 +358,3 @@
 <script src="js/main.js"></script>
 <script src="js/produtos-main.js"></script>
 </html>
-

@@ -16,7 +16,7 @@ if(isset($_POST['submit']) && !empty($_POST['usuario']) && !empty($_POST['senha'
     }
 
     else{
-       print_r('foi');
+       header('Location: usuario.php');
     }
 }
 
