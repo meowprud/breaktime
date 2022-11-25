@@ -1,0 +1,106 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+:root{
+    --font-geral: 'Noto Sans', sans-serif;
+    --font-title: 'Poppins', sans-serif;
+    --cor0: #2f1912;
+    --cor1: #f4e5b8;
+    --cor2: #bd7938;
+    --cor3: #662912;
+    --cor4: #C2651A;
+    --clr-lighttest-brown: #ac7f64;
+    --ff-primary: "Nunito", Helvetica, Arial, sans-serif;
+    --ff-logo: "Brixton", sans-serif;
+    --clr-cream: #f4e5b8;
+    --clr-white: #f5f5f5;
+        
+}
+
+@font-face {
+    font-family: "Brixton";
+    src: url("attentica-ultralight.ttf") format('opentype');
+} 
+
+
+.time-break{
+    width: 100%;
+
+}
+
+.time-break h1{
+    font-family: var(--ff-logo);
+    color: var(--cor0);
+    font-size: 2.3em;
+    font-weight: 500;
+    margin: 1.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-break{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.integrantes-break{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 1em 3em;
+    width: 14em;
+    height: 15em;
+    margin:  1em 0;
+    
+   
+}
+
+
+.foto-integrante{
+
+    width: 12em;
+    height: 11em;
+}
+
+.foto-integrante img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: .2em solid transparent;
+    border-radius: 5.5em;
+    object-fit: cover;
+}
+
+.foto-integrante img:hover{
+    border: .2em solid var(--cor4);
+    transition: all .3s ease-in-out;
+}
+
+
+.info-integrante{
+    margin-top: .4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-integrante h2{
+    font-family: var(--font-title);
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.info-integrante p{
+    color: var(--cor0);
+    text-align: center;
+    font-family: var(--font-geral);
+}

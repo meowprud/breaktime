@@ -31,14 +31,17 @@ html {
 .sobre {
     margin-top: 3em;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 3em;
+    
 }
 
 
 .container-sobre {
+    margin: 0em 1.8em;
     display: flex;
     width: 100%;
     height: 100%;
@@ -46,6 +49,8 @@ html {
     align-items: center;
     padding: 0;
     background-color: var(--clr-cream);
+    box-shadow: .1em .1em .2em  rgb(134, 134, 134);
+    
     
 }
 
@@ -54,37 +59,41 @@ html {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 0 3em 1em 3em;
+    padding: 1em 2em 1em 2em;
     margin: 2em;
     width: 50%;
 
 }
 
 .info-sobre p{
+    text-align: center;
     font-family: var(--font-geral);
+    font-size: 1.15em;
     font-weight: 400;
     line-height: 26px;
     color: black;
 }
 
 .info-sobre h2{
-    font-family: var(--ff-logo);
-    color: black;
+    font-family: var(--font-title);
+    color: var(--cor0);
     font-size: 2em;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: .5em;
+    text-shadow: .05em .05em .1em rgba(128, 128, 128, 0.445);
 }
 
 .img-sobre{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     width: 50%;
-    
+    height: 100%;
+    object-fit: cover;
 }
 
 .img-sobre img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     opacity: 1;
 }
@@ -96,9 +105,8 @@ html {
     align-content: center;
     align-items: center;
     width: 100%;
-    height: 10em;
     margin-top: 2em;
-    background-color: var(--clr-cream);
+   
     
 }
 
@@ -108,7 +116,12 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
+    padding: 2em;
+    margin: 0em 1.8em;
+    background-color: var(--clr-cream);
+    box-shadow: .1em .1em .2em rgb(134, 134, 134);
+
+    
 }
 
 .div-mais p, a{

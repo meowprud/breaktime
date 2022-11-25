@@ -46,7 +46,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin: 4em 0;
     
     
 
@@ -55,11 +55,11 @@
 .produtos #prod{
     font-family: var(--font-title);
     margin-top: 2.2rem;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     letter-spacing: .2rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--cor0);
-    text-transform: uppercase;
+    text-shadow: .05em .05em .05em rgb(119, 119, 119);
 }
 
 .produtos-c {
@@ -84,24 +84,20 @@
     transition: all .3s;
 }
 
-.produto:hover {
-    background-color: var(--cor0);
-    cursor: pointer;
-}
-.produto:hover .text-produto{
-    opacity: 1;
-    visibility: visible;
-    bottom: 2rem;
-    cursor: pointer;
-}
+
 
 .produto:hover .title-produto{
     color: var(--cor1);
+    visibility: hidden;
+    transition: ease-out;
 }
 
 .produto-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
-    bottom: 2%;
+    bottom: 5%;
     left: 5%;
     padding: .8rem;
     text-shadow: .3rem .1rem 0.5rem black;
@@ -119,16 +115,16 @@
 }
 
 .text-produto{
+    width: 100%;
+    word-break: keep-all;
     opacity: 0;
     visibility: 0;
     font-family: var(--font-geral);
     font-weight: 400;
-    font-size: 1em;
-    word-wrap:normal; 
+    font-size: 1em; 
     line-height: 1.16rem;
-    width: 90%;
     color: white;
-    margin-bottom: 2.5rem;
+    
 }
 
 .produto-content button{
@@ -144,6 +140,16 @@
     color: #fff;
 }
 
+.produto:hover {
+    background-color: var(--cor0);
+    cursor: pointer;
+}
+.produto:hover .text-produto{
+    opacity: 1;
+    visibility: visible;
+    bottom: 2rem;
+    cursor: pointer;
+}
 .produto-content button:hover{
     cursor: pointer;
     background: #8E2DE2;  

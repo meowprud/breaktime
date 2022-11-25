@@ -1,0 +1,90 @@
+:root{
+    --font-geral: 'Noto Sans', sans-serif;
+    --font-title: 'Poppins', sans-serif;
+    --cor0: #2f1912;
+    --cor1: #f4e5b8;
+    --cor2: #bd7938;
+    --cor3: #662912;
+    --cor4: #C2651A;
+    --clr-lighttest-brown: #ac7f64;
+    --ff-primary: "Nunito", Helvetica, Arial, sans-serif;
+    --ff-logo: "Brixton", sans-serif;
+    --clr-cream: #f4e5b8;
+    --clr-white: #f5f5f5;
+        
+}
+
+@font-face {
+    font-family: "Brixton";
+    src: url("attentica-ultralight.ttf") format('opentype');
+} 
+:root{
+    --font-geral: 'Noto Sans', sans-serif;
+    --font-title: 'Poppins', sans-serif;
+    --cor0: #2f1912;
+    --cor1: #f4e5b8;
+    --cor2: #bd7938;
+    --cor3: #662912;
+    --cor4: #C2651A;
+    --clr-lighttest-brown: #ac7f64;
+    --ff-primary: "Nunito", Helvetica, Arial, sans-serif;
+    --ff-logo: "Brixton", sans-serif;
+    --clr-cream: #f4e5b8;
+    --clr-white: #f5f5f5;
+        
+}
+
+@font-face {
+    font-family: "Brixton";
+    src: url("attentica-ultralight.ttf") format('opentype');
+} 
+
+footer{
+    width: 100%;
+    background-color: var(--cor3);
+}
+
+.container-footer li, i, h2, h3, b, p{
+    font-family: var(--font-geral);
+    font-size: 1.1em;
+    font-weight: 400;
+    color: white;
+}
+
+.container-footer {
+    width: 100%;
+    height: 100%;
+}
+
+.container-top-footer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.container-end-footer{
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0 0;
+}
+.footer-item{
+    padding: 0 2em;
+}
+
+.social-media-footer{
+    display: flex;
+    justify-content: end;
+}
+
+.social-media-footer ul{
+    display: flex;
+}
+
+.container-end-footer b{
+    font-family: var(--ff-logo);
+}
+
+.social-media-footer i{
+    margin: .5em;
+    font-size: 1.3em;
+}

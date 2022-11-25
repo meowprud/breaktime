@@ -34,9 +34,11 @@
     padding-top: .6em;
     padding-bottom:.5em;
     font-family: var(--font-title);
-    font-size: 2.7em;
+    font-size: 2.6em;
+    letter-spacing: .1em;
+    font-weight: 600;
     color: black;
-    text-shadow: .1em .1em .1em rgb(200, 203, 233);
+    text-shadow: .05em .05em .05em rgb(160, 160, 160);
 }
 .tecnologias{
     width: 100%;
@@ -79,10 +81,16 @@
 }
 
 .info-tecnologia p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3em;
     font-family: var(--font-geral);
     text-align: center;
     color: white;
-    font-size: 1.3em;
+    text-shadow: .1em .1em .2em black;
+    font-size: 1.2em;
 }
 
 
@@ -96,14 +104,25 @@
 }
 
 .btn-info-tecnologia a {
-    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
     color: white;
+    background-color: rgb(19, 1, 48);
+    border: .1em solid rgb(113, 87, 187);
+    padding: .3em 1em;
+    border-radius: .15em;
 }
 
 .btn-info-tecnologia a:hover{
-    text-decoration: underline;
-    color: var(--clr-cream);
+    background-color: rgb(113, 87, 187);
+    border: .1em solid rgb(19, 1, 48) ;
+    color: rgb(19, 1, 48);
+    font-weight: bold;
+    transition: .2s ease-in-out;
 }
+
 
 .tecnologias-disp{
     width: 100%;
@@ -166,10 +185,26 @@
     display: flex;
     flex-direction: column;
     padding: .7em;
-    margin: .5em .9em;
-    background-color: white;
+    margin: 1em 2em;
+    background-color: whitesmoke;
     border-radius: .2em;
+    border: .2em solid whitesmoke;
     box-shadow: .1em .15em .2em .1em rgb(161, 161, 161);
+}
+
+@keyframes zoom {0%
+
+    {
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.option-pc:hover{
+    border: .2em solid rgb(19, 1, 48);
+    transition: all .1s ease-in-out;
 }
 
 .img-options {
@@ -193,9 +228,8 @@
 }
 
 .caixas-desc{
-    
-    background-color: var(--clr-blue);
 
+    background-color: var(--clr-blue);
     
 }
 
@@ -204,6 +238,7 @@
     width: 100%;
     font-family: var(--font-title) ;
     color: black;
+    font-weight: 500;
     text-shadow: .1em .1em .1em rgb(179, 174, 174);
     letter-spacing: .1em;
 
@@ -236,6 +271,7 @@
 }
 .info-pcs p, span{
     font-family: var(--font-geral);
+    color: black;
     font-size: 1.1em;
 }
 
@@ -249,15 +285,23 @@
 
 .title-pcs{
     font-family: var(--font-title);
+    color: black;
     font-size: 1.4em;
+    font-weight: 500;
     
 }
 
 .reserva-button a {
+    color: rgb(19, 1, 48);
+    font-weight: 500;
     text-decoration: underline;
 }
 
+.reserva-button a:hover{
+
+}
 .opcao-pc-title{
     margin-top: 1em;
-    color: black;
+    letter-spacing: .1em;
+    font-weight: 500;
 }

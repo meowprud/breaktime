@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reserva/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,33 +13,63 @@
     </header>
 
     <section class="formulario-reserva">
+        <div class="img-fundo-reserva">
+            <img src="img/tec/fundo-reserva2.jpg" alt="">
+        </div>
 
         <div class="container-form">
             <form action="" method="POST">
-
-                <div class="usuario-input">
-                    <label for="">Nome de usuário:</label>
-                    <input type="text" name="usuario" id="usuario">
+<div class="outro-container">
+    
+                    <div class="usuario-input input-geral">
+                        <label for="">Nome de usuário:</label>
+                        <input type="text" name="usuario" id="usuario" placeholder="Insira o usuário">
+                    </div>
+    
+                    <div class="password-input input-geral">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" placeholder="Insira a senha">
+                    </div>
+    
+                    <div class="dia-input  input-geral">
+                        <label for="data">Data:</label>
+                        <input type="date" name="data" id="data" placeholder="Escolha a data de preferência">
+                    </div>
+    
+                    <div class="hora-input input-geral">
+                        <label for="hora">Horário:</label>
+                        <input type="time" name="hora" id="hora" placeholder="Informe o horário">
+                    </div>
+    
+                    <div class="input-quanthoras input-geral">
+                        <label for="quanthoras">Horas de uso</label>
+                        <input type="number" name="quanthoras" id="" placeholder="Horas de uso"><br>
+                        <span>Caso ultrapasse o nº estipulado, pagar pelas horas adicionais</span>
+                    </div>
+    
+                <div class="termos-multas">
+                    <h2>Sujeito a multa caso</h2>
+                    <ul>
+                        <li>Danifique algum computador</li>
+                        <li>Cause perturbação durante a utilização do aparelho</li>
+                        <li>Não respeite as regras do local</li>
+                    </ul>
                 </div>
-
-                <div class="password-input">
-                    <label for="">Senha:</label>
-                    <input type="password" name="senha" id="senha">
-                </div>
-
-                <div class="dia-input">
-                    <label for=""></label>
-                    <input type="date" name="data" id="data">
-                </div>
-
-                <div class="hora-input">
-                    <label for=""></label>
-                    <input type="time" name="hora" id="hora">
-                </div>
+    
+                <br>
+                    <div class="termos-input">
+                        <input type="checkbox" name="termos" id="termos">
+                        <p>Li e concordo com os termos de uso</p>    
+                    </div>
+</div>
 
 
             </form>
         </div>
     </section>
+
+    <footer>
+
+    </footer>
 </body>
 </html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+:root{
+    --font-geral: 'Noto Sans', sans-serif;
+    --font-title: 'Poppins', sans-serif;
+    --ff-primary: "Nunito", Helvetica, Arial, sans-serif;
+    --ff-logo: "Brixton", sans-serif;
+    --cor0: hsl(14, 45%, 13%);
+    --cor1: hsl(45, 73%, 84%);
+    --cor2: hsl(29, 54%, 48%);
+    --cor3: hsl(16, 70%, 24%);
+    --cor4: hsl(27, 76%, 43%);
+    --clr-lighttest-brown: hsl(23, 30%, 53%);
+    --clr-cream: hsl(45, 73%, 84%);
+    --clr-white: hsl(0, 0%, 96%);
+    --clr-blue: hsl(237, 39%, 91%);
+}
+
+@font-face {
+    font-family: "Brixton";
+    src: url("attentica-ultralight.ttf") format('opentype');
+} 
+
+.endereco-contato{
+    width: 100%;
+
+}
+
+.container-local-contato{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3em 1.5em;
+
+}
+
+.first-contato, .contato-informacoes-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.container-contato{
+    padding: 3em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-local{
+    padding: 2em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-contato h1, .descricao-local h2{
+    display: flex;
+    justify-content: center;
+    font-family: var(--ff-logo);
+    color: var(--cor0);
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+
+.rede-social i{
+    margin: 0;
+    margin-right: .3em;
+    display: flex;
+    color: var(--cor0);
+    font-size: 2em;
+}
+
+.rede-social p {
+    display: flex;
+    font-family: var(--font-title);
+    color: var(--cor0); 
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 400;
+    align-items: center;
+    line-height: normal;
+}
+
+.descricao-local{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+.descricao-local p{
+    display: flex;
+    font-family: var(--font-title);
+    color: var(--cor0);
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    margin-top: .5em;
+    font-weight: 400;
+    align-items: center;
+    line-height: normal;
+}
+
+
+.local-foto{
+    margin-top: 1em;
+    height: 20em;
+    width: 30em;
+
+}
+
+.local-foto img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.rede-social {
+    display: flex;
+    padding: 3em 0 0 0;
+
+}
+
