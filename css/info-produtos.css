@@ -53,7 +53,7 @@ header{
 
  .link-cardapio h1, .link-cardapio a{
     font-family: var(--ff-primary);
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 500;
     color: white;
 }
@@ -66,8 +66,12 @@ header{
     margin-top: .1em;
     font-weight: bold;
     background-color: var(--clr-cream);
+    border: .1em solid var(--clr-cream);
 }
 
+.link-cardapio a:hover{
+    border: .1em solid var(--cor0);
+}
 .canto-esquerdo{
     height: 100%;
     display: flex;
@@ -76,7 +80,7 @@ header{
 .canto-esquerdo h1{
     display: flex;
     align-items: center;
-    font-size: 2.3em;
+    font-size: 2.1em;
     margin-left: .4em;
     font-family: var(--ff-logo);
     color: white;
@@ -190,12 +194,14 @@ header{
     opacity: 1;
     transition: .2s ease-in;
  }
+
+ 
 .content h3{
     font-size: 1.3em;;
-    letter-spacing: .1em;
-    color: var(--cor1);
+    letter-spacing: .06em;
+    color: var(--clr-white);
     font-weight: bold;
-    text-shadow: .1em .1em .1em black;
+    text-shadow: .1em .1em .2em black;
     font-family: var(--font-title);
     
 }
@@ -240,13 +246,11 @@ header{
     font-family: var(--ff-logo);
     font-size: 2.3em;
     font-weight: bolder;
+    letter-spacing: .06em;
     display: flex;
     padding-top: 1em;
-    text-shadow: .04em .04em .05em black;
+    text-shadow: .04em .04em .05em rgb(151, 149, 149);
     justify-content: center;
     color: var(--cor0);
 }
 
-footer li{
-    list-style: none;
-}
