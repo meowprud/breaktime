@@ -148,7 +148,7 @@
     width: 100%;
     max-width: 1170px;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:center;
     
 }
 
@@ -246,7 +246,7 @@
 
 .caixas-desc ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     flex-wrap: wrap;
     
