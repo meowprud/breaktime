@@ -9,15 +9,14 @@
    $email=$_POST['email'];
    $celular=$_POST['celular'];
    $senha=$_POST['senha'];
-   $confirmesenha=$_POST['confirme_senha'];
    $genero=$_POST['genero'];
 
 
-   $sql= mysqli_query($conexao, "INSERT INTO info(nome, usuario, email, celular, senha, confirmesenha, genero) VALUES('$nome', '$usuario', '$email', '$celular', '$senha', '$confirmesenha', '$genero')");
+   $sql= mysqli_query($conexao, "INSERT INTO cadastro(nome, usuario, email, celular, senha, genero) VALUES('$nome', '$usuario', '$email', '$celular', '$senha', '$genero')");
+
 //insere na tabela
 
-
-header('Location: http://localhost/version1/index.html');
+header('Location: index.html');
   exit();
 
  }

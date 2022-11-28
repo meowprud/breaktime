@@ -1,4 +1,5 @@
 <?php
+
  include_once('conexao.php');
 
 if(isset($_POST['submit']) && !empty($_POST['usuario']) && !empty($_POST['senha']) ){
@@ -7,7 +8,7 @@ if(isset($_POST['submit']) && !empty($_POST['usuario']) && !empty($_POST['senha'
     $usuario = $_POST['usuario'];
     $senha = $_POST['senha'];
 
-    $sql = "SELECT * FROM info WHERE usuario = '$usuario' and senha = '$senha'";
+    $sql = "SELECT * FROM cadastro WHERE usuario = '$usuario' and senha = '$senha'";
 
     $result = $conexao->query($sql);
 
