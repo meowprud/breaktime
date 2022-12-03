@@ -16,15 +16,15 @@
         <div class="login-c">
             <h2 class="title">Login</h2>
             <div class="inputs">
-                <form action="confirmalogin.php" method="POST" autocomplete="no">
+                <form action="confirmalogin.php" method="POST" autocomplete="yes">
                     <div class="input-box">
                         <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario" id="usuario" placeholder="Informe seu usuário" value="">
+                        <input type="text" name="usuario" id="usuario" placeholder="Informe seu usuário">
                     </div>
 
                     <div class="input-box">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" value="">
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
                     </div>
                 
                 </div>

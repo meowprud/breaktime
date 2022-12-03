@@ -33,7 +33,7 @@
                 <div class="login-btn">
 
             <p>Possui uma conta?</p>
-            <a href="login.php">Conecte-se</a>
+            <a href="login.html">Conecte-se</a>
         
                 </div>
             </div>
@@ -43,8 +43,8 @@
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
                     </div>
                     <div class="input-box">
-                        <label for="usuario">Usuário</label>
-                        <input type="text" id="usuario" name="usuario" placeholder="Nome de usuário" required>
+                        <label for="login">Usuário</label>
+                        <input type="text" id="login" name="login" placeholder="Nome de usuário" required>
                     </div>
                     <div class="input-box">
                         <label for="email">Email</label>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="input-box">
                         <label for="confirme_senha">Confirme sua senha</label>
-                        <input type="password" id="confirme_senha" name="confirme_senha" placeholder="Confirme sua senha" required>
+                        <input type="password" id="confirmesenha" name="confirmesenha" placeholder="Confirme sua senha" required>
                     </div>
 
                     

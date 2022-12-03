@@ -108,16 +108,17 @@
     align-items: center;
     justify-content: center;
     font-size: 1em;
-    color: white;
-    background-color: rgb(19, 1, 48);
-    border: .1em solid rgb(113, 87, 187);
+    font-weight: bold;
+    color: rgb(19, 1, 48);
+    background-color: rgb(113, 87, 187);
+    border: .1em solid rgb(19, 1, 48);
     padding: .4em 1em;
 }
 
 .btn-info-tecnologia a:hover{
-    background-color: rgb(113, 87, 187);
-    border: .1em solid rgb(19, 1, 48) ;
-    color: rgb(19, 1, 48);
+    background-color: rgb(19, 1, 48);
+    border: .1em solid rgb(113, 87, 187) ;
+    color: white;
     font-weight: bold;
     transition: .2s ease-in-out;
 }
