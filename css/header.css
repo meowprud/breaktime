@@ -206,6 +206,7 @@ body{
     transition: 1s all;
 
 }
+
 .menu {
     display: flex;
     flex-direction: column;

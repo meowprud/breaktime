@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -23,11 +22,7 @@
     <title>Break Time</title>
 </head>
 <body>
-<?php
-session_start();
 
-$usuario1 = $_SESSION['$usuario'];
-?>
     <div class="container">
         <header>
             <div class="nav-bar">
@@ -40,11 +35,28 @@ $usuario1 = $_SESSION['$usuario'];
                     <a href="#produtos">Produtos</a>
                     <a href="#tecnology">Cyber</a>
                     
-                    <div class="usuario">
-                            <i class="fa-solid fa-user"></i>
-                            <p>Olá, <sup> <?php print_r($usuario1);?></sup></p>
-                        </div>
+                
+                <div class="usuario">
+                    <p class="usuario-nome" >Olá,  Melissa</p>
                 </div>
+                           
+                    
+                </div>
+
+            <aside class="usuarioside show-reserva">
+                <div class="container-reserva">
+                    <div class="reservas">
+                        <h2>Reserva</h2>
+                        <p class="reserva-data">dd/mm/aaaa</p>
+
+                    </div>
+                    <div class="sair">
+                        <b class="sair-btn">Desconecte de sua conta</b>
+
+                        <button>Sair</button>
+                    </div>
+                </div>
+            </aside>
                 
             </div>
 

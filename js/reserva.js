@@ -38,6 +38,27 @@ const qtdhoras = document.querySelector("#qtdhoras").value
 
 let preco = qtdhoras * valor;
 
-document.querySelector("#preco").innerHTML = preco
+document.querySelector("#preco").innerHTML = preco;
 
+}
+
+function GerarCódigoDeBarras(elementoInput) {
+    atualizaPreco(preco);
+
+    let configuracao = {
+        format: "pharmacode",
+        lineColor: "#0aa",
+        width: 4,
+        height: 40,
+        displayValue: false,
+        valid: function (valido) {
+            if (valido) {
+                document.getElementById("mensagem").innerHTML = "";
+            } else {
+                document.getElementById("mensagem").innerHTML = "Valor invalido";
+    
+            }
+        }
+    };
+    JsBarcode('#codBarras', elementoInput.value, configuracao);
 }

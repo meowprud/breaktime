@@ -1,6 +1,20 @@
 
   <html>
     <?php
+    /*<?php echo $dado["nome"];?>*/
+
+
+    /*<?php
+session_start();
+
+include_once('conexao.php');
+$usuario1 = $_SESSION['$usuario'];
+
+$consulta = "SELECT * FROM usuarios where login = '$usuario1'";
+$con = $conexao->query($consulta)or die($conexao->error);
+
+?>  */
+
     if(isset($_POST['submit']) && !empty($_POST['login']) && !empty($_POST['senha'])){
     
     include_once('conexao.php');
@@ -39,7 +53,7 @@
     
           //se não existir
           else{
-            $query = "INSERT INTO usuarios (login,senha,email, celular, genero) VALUES ('$login','$senha', '$email', '$celular', '$genero')";
+            $query = "INSERT INTO usuarios (nome,login,senha,email, celular, genero) VALUES ('$nome','$login','$senha', '$email', '$celular', '$genero')";
             $insert = $conexao->query($query);
           
 

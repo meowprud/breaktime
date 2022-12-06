@@ -6,7 +6,7 @@ burguer.addEventListener('click', function(){
 });
 
 usuario.addEventListener('click', function(){
-    document.querySelector(".container").classList.toggle("show-usuario");
+    document.querySelector(".container").classList.toggle("show-reserva");
 });
 
 
