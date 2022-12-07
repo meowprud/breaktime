@@ -1,3 +1,18 @@
+<?php
+
+session_start();
+
+include_once('conexao.php');
+$usuario1 = $_SESSION['$usuarion'];
+
+$consulta = "SELECT nome FROM usuarios WHERE login = '$usuario1'";
+$con = $conexao->query($consulta);
+
+$consulte = "SELECT * FROM reservas WHERE usuario = '$usuario1'";
+$consi = $conexao->query($consulte);
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -35,19 +50,21 @@
                     <a href="#produtos">Produtos</a>
                     <a href="#tecnology">Cyber</a>
                     
-                
+                <?php while($dado = $con->fetch_array()){?>
                 <div class="usuario">
-                    <p class="usuario-nome" >Olá,  Melissa</p>
+                    <p class="usuario-nome" >Olá, <?php echo $dado["nome"];?></p>
                 </div>
-                           
+                <?php }?>           
                     
                 </div>
 
             <aside class="usuarioside show-reserva">
+
+            <?php while($info = $consi->fetch_array()){?>
                 <div class="container-reserva">
                     <div class="reservas">
-                        <h2>Reserva</h2>
-                        <p class="reserva-data">dd/mm/aaaa</p>
+                        <h2>Reserva mais próxima</h2>
+                        <p class="reserva-data"><?php echo date("d/m/Y", strtotime($info["dia"]));?> às <?php echo $info["hora"];?></p>
 
                     </div>
                     <div class="sair">
@@ -56,6 +73,7 @@
                         <button>Sair</button>
                     </div>
                 </div>
+                <?php }?>
             </aside>
                 
             </div>

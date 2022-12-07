@@ -12,15 +12,5 @@ usuario.addEventListener('click', function(){
 
 
 
-document.querySelector("#qtdhoras").addEventListener("change", atualizaPreco)
 
 
-function atualizaPreco(){
-
-const qtdhoras = document.querySelector("#qtdhoras").value
-
-let preco = qtdhoras * 100;
-
-document.querySelector("#preco").innerHTML = preco
-
-}

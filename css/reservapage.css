@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+:root{
+    --font-geral: 'Noto Sans', sans-serif;
+    --font-title: 'Poppins', sans-serif;
+    --cor0: #2f1912;
+    --cor1: #f4e5b8;
+    --cor2: #bd7938;
+    --cor3: #662912;
+    --cor4: #C2651A;
+    --clr-lighttest-brown: #ac7f64;
+    --ff-primary: "Nunito", Helvetica, Arial, sans-serif;
+    --ff-logo: "Brixton", sans-serif;
+    --clr-cream: #f4e5b8;
+    --clr-white: #f5f5f5;
+        
+}
+
+@font-face {
+    font-family: "Brixton";
+    src: url("attentica-ultralight.ttf") format('opentype');
+} 
+
+body h1{
+    font-family: var(--ff-logo);
+}
+.content-boleto{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content-boleto h2{
+   font-family: var(--font-title);
+   font-size: 1.2em;
+}
+
+.content-boleto span{
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-geral);
+    font-size: 1.1em;
+}
+
+.container-boleto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+body{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}

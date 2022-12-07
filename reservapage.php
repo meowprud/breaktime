@@ -56,7 +56,6 @@
                         </div>
                     </div>
                     <div class="planos-input">
-                        <label for="plan">Opções:</label>
                         <div class="planos-comp">
                             <input type="radio" id="game" name="planos" class="planos" value="1">
                             <label for="#game">Game</label><br>

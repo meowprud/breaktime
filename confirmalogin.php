@@ -21,7 +21,7 @@ if(isset($_POST['submit']) && !empty($_POST['usuario']) && !empty($_POST['senha'
     $senha = $_POST['senha'];
 
     session_start();
-    $_SESSION['$usuario'] = $_POST['usuario'];
+    $_SESSION['$usuarion'] = $_POST['usuario'];
     /*print_r('Email: '. $usuario);
     print_r('Senha: '. $senha);*/
 
