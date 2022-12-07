@@ -66,7 +66,7 @@ $consi = $conexao->query($consulte);
            
                 <div class="container-reserva">
                     <div class="reservas">
-                        <h2>Reserva mais próxima</h2>
+                        <h2>Reservas</h2>
                         <?php while($info = $consi->fetch_array()){?>
                         <p class="reserva-data">
                         <?php echo date("d/m/Y", strtotime($info["dia"]));?> às <?php echo $info["hora"];?>
