@@ -16,9 +16,9 @@
 
     <div class="lateral">
         <div class="logo-lateral">
-            <a href="index.html"><img src="img/logos/logo_sem_fundo.png" alt=""></a>
+            <a href="usuario.php"><img src="img/logos/logo_sem_fundo.png" alt=""></a>
         </div>
-        <a href="index.html">
+        <a href="usuario.php">
             <p>Home</p>
         </a>
     </div>

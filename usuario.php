@@ -11,6 +11,7 @@ $con = $conexao->query($consulta);
 $consulte = "SELECT * FROM reservas WHERE usuario = '$usuario1'";
 $consi = $conexao->query($consulte);
 
+
 ?>
 
 <!DOCTYPE html>
@@ -41,39 +42,44 @@ $consi = $conexao->query($consulte);
     <div class="container">
         <header>
             <div class="nav-bar">
+
                 <div class="logo-lateral">
                     <a href="#"><img src="img/logos/logo_sem_fundo.png" alt=""></a>
                 </div>
+
                 <div class="nav-links">
                     <a href="#home">Home</a>
                     <a href="#sobre">Sobre nós</a>
                     <a href="#produtos">Produtos</a>
                     <a href="#tecnology">Cyber</a>
                     
-                <?php while($dado = $con->fetch_array()){?>
+                <?php $dado = $con->fetch_array();?>
                 <div class="usuario">
                     <p class="usuario-nome" >Olá, <?php echo $dado["nome"];?></p>
                 </div>
-                <?php }?>           
+                   
                     
                 </div>
 
             <aside class="usuarioside show-reserva">
 
-            <?php while($info = $consi->fetch_array()){?>
+           
                 <div class="container-reserva">
                     <div class="reservas">
                         <h2>Reserva mais próxima</h2>
-                        <p class="reserva-data"><?php echo date("d/m/Y", strtotime($info["dia"]));?> às <?php echo $info["hora"];?></p>
-
+                        <?php while($info = $consi->fetch_array()){?>
+                        <p class="reserva-data">
+                        <?php echo date("d/m/Y", strtotime($info["dia"]));?> às <?php echo $info["hora"];?>
+                    </p>
+                    <?php }?>
                     </div>
                     <div class="sair">
                         <b class="sair-btn">Desconecte de sua conta</b>
 
-                        <button>Sair</button>
+                        <a href="index.html">Sair</a>
                     </div>
                 </div>
-                <?php }?>
+               
             </aside>
                 
             </div>
@@ -136,7 +142,7 @@ $consi = $conexao->query($consulte);
                     <p>A Break Time foi pensada exatamente para você, que busca um local para lazer e trabalho. Nós te oferecemos a tranquilidade de uma cafeteria e a tecnologia de um cyber café! </p>
                 </div>
                 <div class="img-sobre">
-                    <img src="img/atendimento-img.jpg" alt="" srcset="">
+                    <img src="img/atendimento-img.jpg" alt="Barista entregando pedido" srcset="">
                 </div>
             </div>
         </section>
@@ -213,7 +219,7 @@ $consi = $conexao->query($consulte);
                          É possível! Garanta já o seu horário no nosso espaço Cyber. </p>
 
                     <div class="btn-info-tecnologia">
-                        <a href="reserva.html">Faça sua reserva</a>
+                        <a href="reservapage.php">Faça sua reserva</a>
                     </div>
                 </div>
 
@@ -286,7 +292,7 @@ $consi = $conexao->query($consulte);
                                 <span>R$13,00<sup>1h</sup></span>
 
                                 <div class="reserva-button">
-                                    <a href="reserva.html">Faça sua reserva</a>
+                                    <a href="reservapage.php">Faça sua reserva</a>
                                 </div>
                             </div>
                         </div>
@@ -299,7 +305,7 @@ $consi = $conexao->query($consulte);
                             <p>A melhor opção para ser produtivo no seu trabalho com a garantia de um computador com bom desempenho!</p>
                             <span>R$9,00<sup>1h</sup></span>
                                 <div class="reserva-button">
-                                    <a href="reserva.html">Faça sua reserva</a>
+                                    <a href="reservapage.php">Faça sua reserva</a>
                                 </div>
                             </div>
                         </div>
@@ -319,7 +325,7 @@ $consi = $conexao->query($consulte);
                     <p>Estrada do Mendanha 2367- Campo Grande, Rio de Janeiro – RJ.</p>
                 </div>
                 <div class="local-foto">
-                    <img src="img/local.jpg" alt="" srcset="">
+                    <img src="img/local.jpg" alt="Parte da frente Break Time" srcset="">
                 </div>
             </div>
 
@@ -363,7 +369,7 @@ $consi = $conexao->query($consulte);
 
             <div class="integrantes-break">
                 <div class="foto-integrante">
-                    <img src="img/integrantes/vinicius.jpg" alt="" srcset="">
+                    <img src="img/integrantes/vinicius.jpg" alt="membro Break Time Vinicius Cainã" srcset="">
                 </div>
                 <div class="info-integrante">
                     <h2>Vinícius Cainã</h2>
@@ -373,7 +379,7 @@ $consi = $conexao->query($consulte);
 
             <div class="integrantes-break">
                 <div class="foto-integrante">
-                    <img src="img/integrantes/nicollyn.jpg" alt="" srcset="">
+                    <img src="img/integrantes/nicollyn.jpg" alt="membra Break Time Nicollyn Santana" srcset="">
                 </div>
                 <div class="info-integrante">
                     <h2>Nicollyn Santana</h2>
@@ -383,7 +389,7 @@ $consi = $conexao->query($consulte);
 
             <div class="integrantes-break">
                 <div class="foto-integrante">
-                    <img src="img/integrantes/juliana.jpg" alt="" srcset="">
+                    <img src="img/integrantes/juliana.jpg" alt="membra Break Time Juliana Oliveira" srcset="">
                 </div>
                 <div class="info-integrante">
                     <h2>Juliana Oliveira</h2>
@@ -393,7 +399,7 @@ $consi = $conexao->query($consulte);
 
             <div class="integrantes-break">
                 <div class="foto-integrante" id="cio">
-                    <img src="img/integrantes/melissa.jpg" alt="" srcset="">
+                    <img src="img/integrantes/melissa.jpg" alt="membra Break Time Melissa Prudêncio" srcset="">
                 </div>
                 <div class="info-integrante">
                     <h2>Melissa Prudêncio</h2>
@@ -403,7 +409,7 @@ $consi = $conexao->query($consulte);
 
             <div class="integrantes-break">
                 <div class="foto-integrante">
-                    <img src="img/integrantes/raquel.jpg" alt="" srcset="">
+                    <img src="img/integrantes/raquel.jpg" alt="membra Break Time Raquel Sales" srcset="">
                 </div>
                 <div class="info-integrante">
                     <h2>Raquel Sales</h2>
@@ -413,7 +419,7 @@ $consi = $conexao->query($consulte);
 
             <div class="integrantes-break">
                 <div class="foto-integrante">
-                    <img src="img/integrantes/rayssa.jpg" alt="" srcset="">
+                    <img src="img/integrantes/rayssa.jpg" alt="membra Break Time Rayssa Vitória" srcset="">
                 </div>
                 <div class="info-integrante">
                     <h2>Rayssa Emídio</h2>
@@ -423,7 +429,7 @@ $consi = $conexao->query($consulte);
 
             <div class="integrantes-break">
                 <div class="foto-integrante">
-                    <img src="img/integrantes/isabelle.jpg" alt="" srcset="">
+                    <img src="img/integrantes/isabelle.jpg" alt="membra Break Time Isabelle Jales" srcset="">
                 </div>
                 <div class="info-integrante">
                     <h2>Isabelle Jales</h2>
@@ -441,18 +447,18 @@ $consi = $conexao->query($consulte);
                 <div class="parceiro">
                     
                     <div class="img-parceiro" id="num1">
-                        <img src="img/logos/logo-apolo.png" alt="">
+                        <img src="img/logos/logo-apolo.png" alt="Logo Apolo Energy">
                     </div>
                 </div>
                 <div class="parceiro">
                     
                     <div class="img-parceiro">
-                        <img src="img/logos/LIGHTSPEED_LOGO.png" alt="">
+                        <img src="img/logos/LIGHTSPEED_LOGO.png" alt="Logo Lightspeed">
                     </div>
                 </div>
                 <div class="parceiro">
                     <div class="img-parceiro">
-                        <img src="img/logos/cafe_caramelo_1-removebg-preview.png" alt="">
+                        <img src="img/logos/cafe_caramelo_1-removebg-preview.png" alt="Logo Café Caramello">
                    </div>
                     </div>
             </div>

@@ -28,6 +28,7 @@ body h1{
 }
 .content-boleto{
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
 }
 
