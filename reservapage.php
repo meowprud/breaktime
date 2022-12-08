@@ -8,6 +8,12 @@
     <script src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/JsBarcode.all.min.js"></script>
     <title>Document</title>
 </head>
+
+<style>
+    #text-preco{
+        color: white;
+    }
+    </style>
 <body>
     
 <!--   <h2 id="preco">R$ 0,00</h2>  -->
@@ -16,11 +22,8 @@
 
     <div class="lateral">
         <div class="logo-lateral">
-            <a href="usuario.php"><img src="img/logos/logo_sem_fundo.png" alt=""></a>
+            <a href="#"><img src="img/logos/logo_sem_fundo.png" alt=""></a>
         </div>
-        <a href="usuario.php">
-            <p>Home</p>
-        </a>
     </div>
     
 
@@ -62,6 +65,7 @@
                             <input type="radio" id="business" name="planos" class="planos" value="2">
                             <label for="#business">Businnes</label><br>
                         </div>
+                        <P id="text-preco">R$<label id="preco"></label>
                     <div class="input-quanthoras">
                         <label for="qtdhoras">Horas de uso:</label>
                         <input type="number" name="qtdhoras" id="qtdhoras" placeholder="Horas de uso"><br>

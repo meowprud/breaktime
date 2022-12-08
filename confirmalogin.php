@@ -44,7 +44,7 @@ if(isset($_POST['submit']) && !empty($_POST['usuario']) && !empty($_POST['senha'
     else{
 
         header('Location: usuario.php');
-        $usuario1 = $usuario;
+        
     }
 
 

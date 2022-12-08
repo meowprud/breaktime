@@ -66,18 +66,22 @@ $consi = $conexao->query($consulte);
            
                 <div class="container-reserva">
                     <div class="reservas">
-                        <h2>Reservas</h2>
+                        <h2>Reserva:</h2>
                         <?php while($info = $consi->fetch_array()){?>
                         <p class="reserva-data">
                         <?php echo date("d/m/Y", strtotime($info["dia"]));?> às <?php echo $info["hora"];?>
                     </p>
                     <?php }?>
+                    <div class="excluir">
+                        <input type="button" value="">
+                    </div>
                     </div>
                     <div class="sair">
                         <b class="sair-btn">Desconecte de sua conta</b>
 
                         <a href="index.html">Sair</a>
                     </div>
+                    <?php session_abort();?>
                 </div>
                
             </aside>
@@ -363,7 +367,7 @@ $consi = $conexao->query($consulte);
     </section>
 
     <section class="time-break">
-    <h1>Time Break Time</h1>
+    <h1>Equipe Break Time</h1>
 
         <div class="container-break">
 

@@ -108,7 +108,7 @@
 }
 .reservas{
     background-color: white;
-    padding: 1em 0em;
+    padding: .2em 0em;
     
 }
 
@@ -123,13 +123,14 @@
     justify-content: center;
     align-items: center;
     padding: .2em;
+    margin-top: .5em;
 
 }
 
 .sair b{
     color: black;
     font-size: 1em;
-    margin-bottom: 1em;
+    margin-bottom: .6em;
     text-align: center;
 }
 
@@ -141,7 +142,7 @@
     background-color: var(--clr-lighttest-brown);
     border-radius: 1em;
     font-size: 1em;
-    padding: .3em 1.3em;
+    padding: .1em 1.3em;
     border-radius: 1em;
     border: .15em solid black;
     

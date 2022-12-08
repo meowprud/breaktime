@@ -161,15 +161,34 @@ body h1{
     font-size: 1.1em;
 }
 
+.backto{
+    font-family: var(--ff-logo);
+    font-size: 1.2em;
+    margin-top: 1em;
+    font-weight: bolder;
+    background-color: var(--clr-lighttest-brown);
+    color: black;
+    padding: .2em .7em;
+    border: .1em solid black;
+    border-radius: .8em;
+    text-decoration: none
+}
 
+.aviso{
+    font-family: var(--font-geral);
+    font-size: 1em;
+    font-weight: bolder;
 
+}
+.backto:hover{
+    color: white;
+    
+}
 </style>
 <body>
 
-
-    <h1>Apresente esse documento quando for pagar em nossa loja</h1>
-
-    <p class="aviso">*Esse documento só poderá ser acessado uma única vez</p>
+    <p class="aviso">*Esse documento só poderá ser acessado uma única vez.</p>
+    <p class="aviso">*Ele não é necessário para validar sua reserva no dia.</p>
     
     <div class="container-boleto">
         <div class="content-boleto">
@@ -209,7 +228,7 @@ body h1{
             <span><?php echo "R$".number_format($preco, 2 , ",");?></span><br>
         </div>
 
-        <a href="index.php"> Baixe seu boleto</a>
+        <a class="backto"href="usuario.php"> Volte para o home</a>
 
 <?php }?>
 
